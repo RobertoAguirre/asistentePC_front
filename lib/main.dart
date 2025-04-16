@@ -11,10 +11,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Editor PIPC',
+      title: 'Asistente PIPC',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        useMaterial3: true,
+        primaryColor: const Color(0xFF003B87),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF003B87),
+          foregroundColor: Colors.white,
+        ),
+        scaffoldBackgroundColor: Colors.white,
+        cardColor: const Color(0xFF0D47A1),
+        textTheme: const TextTheme(
+          bodyLarge: TextStyle(color: Colors.white),
+          bodyMedium: TextStyle(color: Colors.white),
+        ),
       ),
       home: const HomeScreen(),
     );
